@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="sass/main.css">
   
   <title>Frontend Mentor | Project tracking intro component</title>
 
@@ -15,24 +20,44 @@
   </style>
 </head>
 <body>
-  Product
-  Features
-  Pricing
-  Login
 
-  New
-  Monograph Dashboard
+  <nav class="navigation">
+    <img src="images/logo.svg" alt="logo" class="navigation-logo"/>
+    <ul class="navigation__list">
+      <li><a href="#" class="navigation-item">Product</a></li>
+      <li><a href="#" class="navigation-item">Features</a></li>
+      <li><a href="#" class="navigation-item">Pricing</a></li>
+      <li><a href="#" class="navigation-item"><span>Login</span></a></li>
+    </ul>
+  </nav>
 
-  Powerful insights into your team
-  Project planning and time tracking for agile teams
+  <main class="main">
+    <div class="main__left">
+      <div class="main__top">
+        <span class="main__top-span">New</span>
+        Monograph Dashboard
+      </div>
+      <div class="main__title">
+        Powerful insights into your team
+      </div>
+      <div class="main__subtitle">
+        Project planning and time tracking for agile teams
+      </div>
+      <div>
+        <button class="main__button">Schedule a demo</button>
+        <span class="main__button-span">to see a live preview</span>
+      </div>
+    </div>
+    <div class="main__right">
+      <img src="images/illustration-devices.svg" alt="main" class="main__right-image"/>
+    </div>
+  </main>
 
-  Schedule a demo
-  to see a live preview
   
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="#">Chad Murobayashi</a>.
     </p>
   </footer>
 </body>
