@@ -34,6 +34,7 @@ body::after {
           transform: translate(50%, -50%);
   z-index: -1;
   border-radius: 0 0 0 50px;
+  overflow: hidden;
 }
 
 .navigation__list {
@@ -170,7 +171,7 @@ body::after {
   overflow-x: hidden;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   .main__right-image {
     width: 150%;
     height: auto;
@@ -195,7 +196,7 @@ body::after {
   position: relative;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   .navigation {
     padding: 0 50px;
   }
@@ -214,7 +215,7 @@ body::after {
   padding-bottom: 50px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   .main {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -228,7 +229,7 @@ body::after {
   padding-left: 100px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   .main__left {
     width: 100%;
     padding: 100px 40px;
@@ -239,11 +240,11 @@ body::after {
   width: 50%;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   .main__right {
-    width: 100%;
+    width: 100vw;
     padding: 30px 0;
-    overflow-x: hidden;
+    overflow: hidden;
   }
 }
 
