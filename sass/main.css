@@ -124,6 +124,12 @@ body::after {
   margin-bottom: 20px;
 }
 
+@media only screen and (max-width: 700px) {
+  .main__top {
+    letter-spacing: 2px;
+  }
+}
+
 .main__top-span {
   background: var(--very-dark-blue);
   color: var(--light-grayish-blue);

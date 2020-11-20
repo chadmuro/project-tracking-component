@@ -81,6 +81,10 @@
     letter-spacing: 5px;
     margin-bottom: 20px;
 
+    @media only screen and (max-width: $bp-small) {
+        letter-spacing: 2px;
+    }
+
     &-span {
         background: var(--very-dark-blue);
         color: var(--light-grayish-blue);
