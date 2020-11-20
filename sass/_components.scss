@@ -3,6 +3,55 @@
     display: flex;
     list-style: none;
     text-transform: uppercase;
+
+    @media only screen and (max-width: $bp-large) {
+        display: none;
+    }
+}
+
+.navigation__small {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    cursor: pointer;
+
+    @media only screen and (max-width: $bp-large) {
+        &.active {
+            display: flex;
+        }
+        
+    }
+
+    &-list {
+        position: absolute;
+        top: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        list-style: none;
+        text-transform: uppercase;
+        background: #fff;
+        box-shadow: 10px 5px 5px rgba(0,0,0,.7);
+        width: 300px;
+        text-align: center;
+        padding: 20px;
+        display: none;
+
+        &.active {
+            display: inline-block;
+        }
+    }
+
+    &-item {
+        text-decoration: none;
+        color: var(--very-dark-blue);
+        line-height: 50px;
+
+        & span {
+            color: var(--grayish-blue)
+        }
+    }
+
 }
 
 .navigation-item {

@@ -23,11 +23,19 @@
 
   <nav class="navigation">
     <img src="images/logo.svg" alt="logo" class="navigation-logo"/>
+    <img src="images/icon-hamburger.svg" alt="hamburger" class="navigation__small active" id="navigation-open"/>
+    <img src="images/icon-close.svg" alt="close" class="navigation__small" id="navigation-close" />
     <ul class="navigation__list">
       <li><a href="#" class="navigation-item">Product</a></li>
       <li><a href="#" class="navigation-item">Features</a></li>
       <li><a href="#" class="navigation-item">Pricing</a></li>
       <li><a href="#" class="navigation-item"><span>Login</span></a></li>
+    </ul>
+    <ul class="navigation__small-list" id="navigation-small-list">
+      <li><a href="#" class="navigation__small-item">Product</a></li>
+      <li><a href="#" class="navigation__small-item">Features</a></li>
+      <li><a href="#" class="navigation__small-item">Pricing</a></li>
+      <li><a href="#" class="navigation__small-item"><span>Login</span></a></li>
     </ul>
   </nav>
 
@@ -45,7 +53,7 @@
       </div>
       <div>
         <button class="main__button">Schedule a demo</button>
-        <span class="main__button-span">to see a live preview</span>
+        <span class="main__button-span">to see a preview</span>
       </div>
     </div>
     <div class="main__right">
@@ -60,5 +68,7 @@
       Coded by <a href="#">Chad Murobayashi</a>.
     </p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
