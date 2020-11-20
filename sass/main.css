@@ -17,7 +17,7 @@ body {
   font-size: 18px;
   font-family: "Barlow Condensed", sans-serif;
   font-weight: 400;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 body::after {
@@ -139,6 +139,7 @@ body::after {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-bottom: 50px;
 }
 
 .main__left {
@@ -148,5 +149,12 @@ body::after {
 
 .main__right {
   width: 50%;
+}
+
+.footer {
+  position: static;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
 }
 /*# sourceMappingURL=main.css.map */
